@@ -1,0 +1,446 @@
+.mainpage{
+    background-color: rgb(64, 29, 29); }
+
+.bazooka{
+    background-color: black;
+}
+
+.tree{
+    background-image:url(tree\ in\ meadow\ 2.jpg);
+    background-size: 100vw;
+    background-repeat: no-repeat;
+    word-break: break-all;
+}
+
+.battle{
+    background-color:#151a1a;
+}
+
+
+
+    
+h1 {
+    color: white;
+    font-size: 30vh;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    
+        }
+
+h2 {
+    font-size: 30vh;
+    color: rgb(212, 87, 53);
+    font-family: "Rancho", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h4{
+    font-size: 30vh;
+    margin: 20px;
+}
+.title{
+         margin: 0;
+            display: flex;
+            justify-content: center; /* Centers horizontally */
+            align-items: center;     /* Centers vertically */
+            height: 90vh;           /* Forces container to full viewport height */
+}
+
+h3 {
+    color: white;
+   font-family: "Rancho", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+    text-decoration: none;
+    font-size: 26px;
+}
+
+p{
+    color: white;
+    justify-content: center;
+}
+
+.continuebutton{
+    color: white;
+    border-style: solid;
+    border-width: 1px;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 15px;
+    width: 100px;
+    text-align: center;
+    text-decoration: none;
+    cursor: grab;
+    position: fixed;
+    bottom: 8px;
+    right: 16px;
+    
+
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 15px;
+
+}
+
+.continuebutton a:visited {
+    color: white;
+    text-decoration: none;
+}
+
+.continuebutton:hover{
+    background-color: #f7c3aa;
+}
+
+/*a:visited{
+    text-decoration: none;
+    color:white;
+}*/
+
+a:link {
+  color: white; /* Replace with your desired color */
+}
+
+a {
+    text-decoration: none;
+}
+
+/*navigation bar*/
+ul {
+    list-style-type: none;
+    margin: 15px;
+    padding: 0;
+    overflow: hidden;
+    border-color: white;
+    border-style: solid;
+    border-width: 0px;
+}
+
+ul li {
+  float: left;
+}
+
+ul li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+ul li a.active {
+    background-color: rgb(75, 100, 99) !important;
+}
+
+ul li a:hover {
+  background-color: rgb(212, 87, 53);
+}
+
+
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  width: 100%;
+  gap: 0rem; /* Optional: adds space between columns */
+  background-color:rgb(35, 56, 55);
+  position: sticky;
+}
+
+.grid1{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    justify-self: center;
+}
+
+.grid2{
+    grid-column-start: 8;
+    grid-column-end: -1;
+  position: sticky;
+  top: 0;
+  z-index: 100; /* Ensures it stays on top of other content */
+
+}
+
+.grid3{
+    grid-column-start: 5;
+    grid-column-end: 8;
+    justify-self: center;
+}
+
+/*bazooka bones*/
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+}
+
+.story section {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+/* Different background colors */
+.gold {
+    background-color: #eca945;
+}
+
+.chestnut {
+    background-color: #a44f3c;
+}
+
+.green {
+    background-color: #3d4625;
+}
+
+.lightgreen{
+    background-color: #779f6f;
+}
+
+.hotpink {
+    background-color: #fc4189;
+}
+
+.blue{
+    background-color: #2774b4;
+}
+
+.sienna{
+    background-color: #401d15;
+}
+
+.orange{
+    background-color: #ec8340;
+}
+.cream {
+    background-color: #f5ece3;
+}
+
+.gunmetal {
+    background-color: #233837;
+}
+
+.lightblue{
+    background-color:#b5d7cc;
+}
+
+.chestnuttext{
+    color: #a44f3c;
+}
+
+.metaltext{
+    color: #233837;
+}
+
+.creamtext{
+    color:#f5ece3;
+}
+
+.siennatext{
+    color:#401d15 !important;
+}
+
+.goldtext{
+    color:#eca945;
+}
+
+.apricottext{
+    color:#f7c3aa !important;
+}
+
+.bluetext{
+    color:#2774b4;
+}
+
+.orangetext{
+    color:#ec8340;
+}
+
+.blacktext{
+    color:black;
+}
+
+.greentext{
+    color: #3d4625;
+}
+
+.whitetext{
+    color: white !important;
+}
+
+.pinktext{
+    color:#fc4189;
+}
+
+.lbltext{
+    color: #b5d7cc;
+}
+
+.redtext{
+    color: darkred;
+}
+
+.lrdtext{
+    color:rgb(255, 55, 55);
+}
+
+.lgrntext{
+    color: #779f6f;
+}
+
+
+
+
+
+/* Arrow styling */
+.arrow {
+    position: absolute;
+    bottom: 30px;
+    font-size: 40px;
+    
+    text-decoration: none;
+    transition: transform 0.3s;
+}
+
+.arrow:hover{
+    transform: translateY(8px);
+}
+
+/* Image button grid */
+.button-container {
+    display: grid;
+    grid-template-columns: repeat(5, 150px);
+    gap: 20px;
+    justify-content: center;
+    margin: 40px auto;
+}
+
+/* Individual image buttons */
+.image-button {
+    border: 1px solid white;
+    padding: 15px;
+    border-radius: 15px;
+    width: 150px;
+    height: 150px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.image-button img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    transition: transform 0.3s;
+}
+
+/* Hover effect */
+.image-button:hover img {
+    transform: translateY(-8px);
+}
+
+.image-button:hover {
+    background-color: rgb(35, 56, 55);
+}
+
+.treecolumn {
+     max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: left;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.pixelp {
+    font-family: "Press Start 2P", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.shrinktext{
+    font-size: 20vh;
+    margin: 30px;
+}
+
+.return{
+    position: absolute;
+    bottom: 30px;
+    font-size: 20px;
+    color: black;
+    text-decoration: none;
+    transition: transform 0.3s;
+}
+
+
+.return:hover{
+    transform: translateY(8px);
+}
+
+h1.fadein {
+    opacity: 0;
+    animation: fadeIn 20s linear 0s 1 normal forwards;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.letter {
+    opacity: 0;
+    animation: fadeIn 0.2s forwards;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+.sanstype{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+}
+
+.scrollfade {
+    opacity: 1;
+}
+
+.white-fade {
+    opacity: 1;
+    transition: opacity 0.1s linear;
+}
+.white-fade {
+    opacity: 1;
+    transition: opacity 0.1s linear;
+}
+
+.tavishfont {
+    font-family:'Times New Roman', Times, serif;
+}
+
+.smalltext{
+    font-size: 8px;
+    color:#a44f3c;
+}

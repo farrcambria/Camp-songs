@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>There's a Tree...</title>
+    <link rel="stylesheet" href="style guide.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=Press+Start+2P&family=Rancho&display=swap" rel="stylesheet">
+</head>
+
+<body class="tree">
+   <div class="grid-container">
+        <div class="grid1">
+            <a href="homepage.html"><h3>Camp Songs</h3></a>
+        </div>
+
+        <div class="grid2">
+            <ul>
+                <li><a href="page 1.html">Bazooka Bubblegum</a></li>
+                <li><a href="page 2.html" class="active">There's a Tree...</a></li>
+                <li><a href="page 3.html">Old McTavish</a></li>
+            </ul>
+        </div>
+    </div>
+    <br>
+<div class="container">
+    <div class="treecolumn">
+    <p class="sanstype"> There's a</p>
+   <h1>TR<span id="tree-letters"></span></h1> 
+   <script>
+    const letters = document.getElementById("tree-letters");
+
+    for (let i = 0; i < 667; i++) {
+        const span = document.createElement("span");
+
+        span.className = "letter";
+        span.textContent = "E";
+        span.style.animationDelay = (i * 0.05) + "s";
+
+        letters.appendChild(span);
+    }
+</script>
+<p class="sanstype"> in the meadow.</p>
+</div>
+</div>
+</body>
+</html>

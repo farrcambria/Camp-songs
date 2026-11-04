@@ -1,0 +1,77 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>McTavish</title>
+
+    <link rel="stylesheet" href="style guide.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=Press+Start+2P&family=Rancho&display=swap" rel="stylesheet">
+</head>
+
+<body class="battle">
+
+    <div class="grid-container">
+        <div class="grid1">
+            <a href="homepage.html"><h3>Camp Songs</h3></a>
+        </div>
+
+        <div class="grid2">
+            <ul>
+                <li><a href="page 1.html">Bazooka Bubblegum</a></li>
+                <li><a href="page 2.html">There's a Tree...</a></li>
+                <li><a href="page 3.html" class="active">Old McTavish</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="treecolumn">
+        <p id="repeating-text" class="whitetext scrollfade tavishfont"></p>
+    </div>
+
+    <script>
+    const paragraph = document.getElementById("repeating-text");
+
+    const sentence = "Old McTavish is dead, but his brother don't know it; his brother is dead but McTavish don't know it. They're both lying dead in the very same bed, and neither one knows that the other is dead!";
+
+    const wah = "*wah* *wah* *wah* *wah*";
+
+    for (let i = 0; i < 300; i++) {
+     // Create the white sentence
+    const whiteText = document.createElement("span");
+    whiteText.className = "white-fade";
+    whiteText.textContent = sentence + " ";
+
+    paragraph.append(whiteText);
+
+    // Create the red wah text
+    const redText = document.createElement("span");
+    redText.className = "lrdtext";
+    redText.textContent = wah + " ";
+
+    paragraph.append(redText);
+}
+
+    // Fade the paragraph as you scroll
+    window.addEventListener("scroll", function() {
+    const scrollPosition = window.scrollY;
+    const maxScroll = document.documentElement.scrollHeight - window.innerHeight;
+
+    const opacity = maxScroll > 0
+        ? 1 - (scrollPosition / maxScroll)
+        : 1;
+
+    const whiteSentences = document.querySelectorAll(".white-fade");
+
+    whiteSentences.forEach(function(sentence) {
+        sentence.style.opacity = Math.min(1, Math.max(0, opacity));
+    });
+});
+    </script>
+
+</body>
+</html>
