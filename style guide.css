@@ -98,7 +98,7 @@ p{
 }*/
 
 a:link {
-  color: white; /* Replace with your desired color */
+  color: white; 
 }
 
 a {
@@ -233,15 +233,15 @@ body {
 }
 
 .chestnuttext{
-    color: #a44f3c;
+    color: #a44f3c !important;
 }
 
 .metaltext{
-    color: #233837;
+    color: #233837 !important;
 }
 
 .creamtext{
-    color:#f5ece3;
+    color:#f5ece3 !important;
 }
 
 .siennatext{
@@ -249,7 +249,7 @@ body {
 }
 
 .goldtext{
-    color:#eca945;
+    color:#eca945 !important;
 }
 
 .apricottext{
@@ -257,19 +257,19 @@ body {
 }
 
 .bluetext{
-    color:#2774b4;
+    color:#2774b4 !important;
 }
 
 .orangetext{
-    color:#ec8340;
+    color: #ec8340, !important;;
 }
 
 .blacktext{
-    color:black;
+    color:black !important;
 }
 
 .greentext{
-    color: #3d4625;
+    color: #3d4625 !important;
 }
 
 .whitetext{
@@ -277,23 +277,23 @@ body {
 }
 
 .pinktext{
-    color:#fc4189;
+    color:#fc4189 !important;
 }
 
 .lbltext{
-    color: #b5d7cc;
+    color: #b5d7cc !important;
 }
 
 .redtext{
-    color: darkred;
+    color: darkred !important;
 }
 
 .lrdtext{
-    color:rgb(255, 55, 55);
+    color:rgb(255, 55, 55) !important;
 }
 
 .lgrntext{
-    color: #779f6f;
+    color: #779f6f !important;
 }
 
 
